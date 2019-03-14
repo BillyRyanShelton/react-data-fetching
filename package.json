@@ -2,15 +2,19 @@
   "name": "gif-search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://billyryanshelton.github.io/react-data-fetching",
   "devDependencies": {
     "react-scripts": "0.8.5"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
