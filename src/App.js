@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'cyberpunk') => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit&api_key=vnt9N7HX9ETIpTNcIlM2WU4emVDYwwZw`)    .then(response => {
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit&api_key=vnt9N7HX9ETIpTNcIlM2WU4emVDYwwZw`)    .then(response => {
       this.setState({
         gifs: response.data.data,
         loading: false
