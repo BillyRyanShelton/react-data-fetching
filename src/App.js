@@ -18,7 +18,7 @@ export default class App extends Component {
     this.performSearch();
   }
 
-  performSearch = (query = 'cyberpunk') => {
+  performSearch = (query = 'arnold schwarzenegger') => {
     axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit&api_key=vnt9N7HX9ETIpTNcIlM2WU4emVDYwwZw`)    .then(response => {
       this.setState({
         gifs: response.data.data,
